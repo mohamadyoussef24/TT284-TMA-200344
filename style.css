@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body {
+    margin: 0; 
+}
+
+.logo {
+    width: 400px;
+}
+
+nav {
+    background-color: #6cadee; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav a {
+    
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+nav a.active,
+nav a:hover {
+    background-color: #3498db; 
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s ease;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1000px) {
+    .navbar {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .interior{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+/* style for hero section */
